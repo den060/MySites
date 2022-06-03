@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DataBase</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<header>
+<div class="container">
+	<div class="ShaP"><a href="index.html">
+		<div class="Glav">ГЛАВНАЯ</div>
+		</a>
+		Создание БД (Базы данных)
+		
+	</div>
+	<div class="body">
+		<div class="box">
+			<div class="ops"><a href="lesson1.html">Урок 1</div></a>
+			<div class="ops"><a href="lesson2.html">Урок 2</div></a>
+			<div class="ops"><a href="lesson3.html">Урок 3</div></a>
+		</div>
+		<div id="DEL" class="ops" ><a href="lesson4.html">Как удалить эту БД</div></a>
+	</div><hr>
+
+<h3><a href="index.html"> Главная </a> → Урок 2</h3>
+
+<div class="Opis">
+	<b><h3>Создание базы данных</h3></b>
+	Запускаем Open Server, входим в phpmyadmin \он находится по адресу:<a href="http://localhost/openserver/phpmyadmin/index.php"> http://localhost/openserver/phpmyadmin/index.php</a> (так же он доступен из контекстного меню OpenServer-а, пункт "Дополнительно>PhpMyAdmin")<br>
+	<img src="images/Lesson2/1.png">
+	Для авторизации используем такие данные:
+	<ul>
+		<li style="list-style: decimal">пользователь/пароль = root / -пустой пароль-</li>
+		<li style="list-style: decimal">пользователь/пароль = mysql / mysql</li>
+	</ul>
+	Можно использовать оба варианта, но рекомендуется второй способ, а именно mysql/mysql, т.к. для супер пользователя не применяются некоторые настроенные конфиги, например не устанавливается автоматически кодировка соединения с базой, поэтому при его использовании нужно дополнительно, в скриптах писать: mysql_query('SET NAMES "utf8"') либо использовать php функцию: mysql_set_charset('utf8').<br><br>
+	<b>Связанно это с тем, что суперпользователям не устанавливается кодировка, через параметр init-connect, который 	обычно прописывается в секции [mysqld], конфигурационного файла my.cnf</b><br> В данный момент именно так настроен 	OpenServer.<br> <br>
+	Далее создать базу itrem<br>
+	<img src="images/Lesson2/2.png">
+	Перейти к созданию таблицы messages<br>
+	<img src="images/Lesson2/3.png">
+	Следующим шагом следует указать нужные поля, их значения<br>
+	<img src="images/Lesson2/4.png">
+	Создать таблицу при помощи кнопки "Сохранить"<br>
+	Готово, база данных успешно создана<br><br>
+</div>
+<div class="perehod">
+	<a href="lesson1.html"><</a>
+	<a href="lesson1.html">1</a>
+	<a href="lesson2.html" id="SS">2</a>
+	<a href="lesson3.html">3</a>
+	<a href="lesson4.html">4</a>
+	<a href="lesson3.html">></a>
+	<a href="lesson4.html">>></a>
+</div>
+<div class="footer">
+	<div class="pod1">Сайт создал <a href="https://vk.com/den060" target="_blank">Исаев Денис</a><br> ИТ-10020 
+	<a href="http://www.kgsu.ru/" target="_blank">КГУ</a> 2020</div>
+	<div class="pod2"><a href="TZ.html">ТЗ</a></div></div>
+</div>
+</header>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poor professor and lost student</title>
+    <!-- стили -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- страницы -->
+        <div class="pages">
+            <!-- экран приветствия -->
+            <div class="page welcome-page" style="display: none;">
+                <div class="sections flex">
+                 
+                    
+                    <!-- секции -->
+                    <div class="section-1">
+                        <!-- инструкция -->
+                        <div class="sect instruction" style="opacity: 0;">
+                            <div class="title">Instructions for the game</div>
+                            <ol>
+							    <li>You can choose a character</li>
+                                <li>WASD movement</li>
+                                <li>The player is attacked by foxes, your * tails</li>
+                                <li>The game ends when the grant ends</li>
+                                <li>For each test, 200 points to the grant</li>
+                                <li>Touching a fox takes 400 points from grant</li>
+								<li>Only two credit scores can exist on a card at a time.</li>
+								<br><br><br><br><br><br><br><br><br><!-- nice code, good br -->
+								<h5>Developed by Denis Isaev IT-20020 2021</h5>
+                            </ol>
+                        </div>
+                        
+                        <!-- выбор персонажа -->
+                        <div class="sect main show">
+                            <div class="title">Choose a character</div>
+                            <div class="portal"></div>
+                            <!-- персонажи -->
+                            <div class="characters">
+                                <div class="character character-rick active" onclick="game.character('rick')"></div>
+                                <div class="character character-morty" onclick="game.character('morty')"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Информация об игре -->
+                    <div class="section-2">
+                        <div class="bg"></div>
+                        <div class="game-name">Poor professor and lost student</div>
+                        <!-- Поле ввода -->
+                        <div class="form">
+                            <label>Player name</label>
+                            <input type="text" placeholder="Name">
+                            <button disabled onclick="game.preparing()">Start</button>
+                        </div>
+                        <!-- Кнопка инструкции -->
+						
+                        <div class="morty"></div>
+						<button class="instruction" onclick="helper.instruction();">Instructions</button>
+                        <div class="Hakyna"></div>
+						
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Игровой экран -->
+            <div class="page game-page" style="display: none;">
+                <!-- Статистика -->
+                <div class="stats">
+                    <div class="username">Name: <name>character</name></div>
+                    <div class="timer"><timer>00:00</timer></div>
+                    <div class="heat"><span></span><heat>0</heat></div>
+                    <div class="hp"><span></span>Grant: <hp>2000</hp></div>
+                </div>
+                <!-- Игровое поле -->
+                <div class="gamebox"></div>
+            
+              
+            </div>
+			
+			<!-- Страница с результатами -->
+            <div class="page finish-page" style="display: none;">
+                <!-- секции -->
+                <div class="sections flex">
+                    <div class="section-1">
+                        <div class="title">High score table</div>
+                        <!-- Таблица -->
+                        <table>
+                            <tr>
+                                <td>№</td>
+                                <td>Name</td>
+								<td>Time</td>
+                                <td>Student's record-book</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td><name>character</name></td>
+								<td><timer>00:00</timer></td>
+                                <td><heat>0</heat></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <div class="section-2">
+                        <div class="bg"></div>
+                        <div class="game-name">Poor professor and lost student</div>
+                        <button onclick="game.start();">Restart</button>
+                    </div>
+                </div>
+            </div>
+			
+            
+    </div>
+
+    <!-- скрипты -->
+    <script src="js/jquery.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

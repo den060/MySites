@@ -1,0 +1,506 @@
+
+
+/* Start:/bitrix/templates/dresscode/components/bitrix/news/brands/style.css?15591952101931*/
+.brandsHeading{
+	border-top: 1px solid #e7e8ea;
+	padding-top: 24px;
+}
+
+.brandsDescription{
+	margin-bottom: 24px;
+	color: #888888;
+	font-size: 12px;
+}
+
+.brandsBigPicture{
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.backToList{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	margin-bottom: 12px;
+	margin-top: 32px;
+	display: block;
+	color: #000000;
+	float: right;
+}
+
+.backToList:active{
+	position: relative;
+	top: 1px;
+}
+
+#left .heading .arrow{
+	background-position: -27px 50%;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+#left .heading.opened .arrow{
+	-moz-transform:    rotate(90deg);
+	-o-transform:      rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform:         rotate(90deg);
+}
+
+#nextSection{
+	border-right: 1px solid #e7e8ea;
+	border-left: 1px solid #e7e8ea;
+	border-top: 1px solid #e7e8ea;
+	margin-bottom: 24px;
+	border-radius: 4px;
+	margin-top: 24px;
+}
+
+#nextSection .title{
+	background-color: #f3f3f3;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 12px;
+	cursor: pointer;
+	padding-top: 12px;
+	font-size: 14px;
+	display: block;
+}
+
+#nextSection ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#nextSection li,
+#nextSection .title{
+	border-bottom: 1px solid #e7e8ea;
+}
+
+/*#nextSection li{
+	padding: 12px 24px;
+}*/
+
+#nextSection li a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+	display: inline-block;
+    padding: 12px 24px;
+	font-size: 13px;
+	color: #000000;
+}
+
+#nextSection li a:hover,
+#nextSection li .selected{
+	color: #ffa800;
+}
+
+#nextSection li .cnt{
+	color: #888888;
+	float: right;
+}
+
+@media all and (max-width: 700px){
+	.backToList {
+		float: none;
+		margin: 18px 0;
+	}
+}
+/* End */
+
+
+/* Start:/bitrix/templates/dresscode/components/bitrix/menu/personal/style.css?15601388771686*/
+#personalMenu{
+	border-bottom: 1px solid #f1f1f1;
+	margin: 0px 0px 24px 0px;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+}
+
+#personalMenu li{
+	margin-bottom: 24px;
+	margin-right: 24px;
+	float: left;
+}
+
+#personalMenu li:last-child{
+	margin-right: 0;
+}
+
+#personalMenu li a{
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	font-size: 16px;
+	color: #000000;
+}
+
+#personalMenu li a:active{
+	position: relative;
+	top: 1px;
+}
+
+#personalMenu li .selected{
+	border-bottom: 1px dashed #000000;
+	font-family: 'robotobold';
+	padding-bottom: 4px;
+}
+
+#personalMenu li .selected:hover{
+	color: #000000;
+}
+
+@media all and (max-width: 1024px) {
+
+	#personalMenuWrap{
+		position: relative;
+		min-width: 100%;
+		overflow: hidden;
+		overflow-x: auto;
+		height: 40px;
+	}
+
+	#personalMenuWrap ul{
+		white-space: nowrap;
+		overflow: auto;
+	}
+
+	#personalMenu li{
+		white-space: nowrap;
+		float: none;
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 18px;
+		margin-bottom: 18px;
+	}
+
+	#personalMenu::after {
+	    background: -moz-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -webkit-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -o-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: -ms-linear-gradient(left, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    background: linear-gradient(to right, rgba(255,255, 255, 0.2), #ffffff 100%);
+	    pointer-events: none;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    height: 100%;
+	    content: '';
+	    width: 35px;
+	}
+
+}
+/* End */
+
+
+/* Start:/bitrix/templates/dresscode/components/bitrix/system.pagenavigation/round/style.css?15591952112357*/
+.bx-pagination {
+	margin: 10px 0;
+}
+.bx-pagination .bx-pagination-container {
+	text-align: center;
+	position: relative;
+}
+.bx-pagination .bx-pagination-container ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+.bx-pagination .bx-pagination-container ul li {
+	display: inline-block;
+	margin: 0 2px 15px 2px;
+}
+.bx-pagination .bx-pagination-container ul li span{
+    -webkit-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+       -moz-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    	-ms-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    	 -o-transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+    		transition: color .3s ease, background-color .3s ease, border-color .3s ease;
+	background: #eff0f1;
+	padding: 0 8px;
+	display: block;
+	height: 32px;
+	min-width: 32px;
+	line-height: 32px;
+	color: #444;
+	font-size: 14px;
+	border-radius: 16px;
+	vertical-align: middle;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.bx-pagination .bx-pagination-container ul li a {
+	text-decoration: none;
+	display: block;
+	border-radius: 16px;
+	display: block;
+	height: 32px;
+	min-width: 32px;
+	line-height: 32px;
+	color: #444;
+	vertical-align: middle;
+}
+.bx-pagination .bx-pagination-container ul li a:hover span{
+	background: #DADADA;
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all a span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev a span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next a span {
+	background: #fff;
+	border: 2px solid #eff0f1;
+	line-height: 28px;
+	padding: 0 18px;
+	color: #444;
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next span{
+	color: #aab1b4;
+	background: #fff;
+	border: 2px solid #eff0f1;
+	line-height: 28px;
+	padding: 0 18px;
+}
+.bx-pagination .bx-pagination-container ul li.bx-pag-all a:hover span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-prev a:hover span,
+.bx-pagination .bx-pagination-container ul li.bx-pag-next a:hover span {
+	background: #fff;
+	border-color: #DADADA;
+	color: #000;
+}
+
+/* End */
+
+
+/* Start:/bitrix/templates/dresscode/components/bitrix/news/brands/bitrix/news.list/.default/style.css?15601389301656*/
+#brands{
+	margin-top: 24px;
+}
+
+#brandList{
+	margin-top: 24px;
+}
+
+#brandList .heading{
+	background-color: #424242;
+	margin-bottom: 0px !important;
+    padding-left: 18px;
+	line-height: 50px;
+    font-size: 17px;
+    display: block;
+    color: #ffffff;
+    height: 50px;
+}
+
+#brandList .items{
+	list-style: none;
+	border-left: 1px solid #e7e8ea;
+}
+
+#brandList .item{
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	background-color: #ffffff;
+	border-right: 1px solid #e7e8ea;
+	border-bottom: 1px solid #e7e8ea;
+	height: 120px;
+	line-height: 120px;
+	float: left;
+	width: 20%;
+}
+
+#brandList .item:before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	top: -1px;
+	height: 1px;
+	background: #e7e8ea;
+}
+
+#brandList .tabloid{
+	position: relative;
+	padding: 12px;
+}
+
+#brandList .markerContainer{
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+
+#brandList .marker {
+	font: normal normal 12px "roboto_ltregular" , arial , sans-serif;
+	background-color: #424242;
+	margin-bottom: 8px;
+	color: #fff;
+	padding: 3px 4px;
+	line-height: 16px;
+	z-index: 2;
+}
+
+#brandList .picture{
+	-webkit-transition: 0.2s all ease-in-out;
+	-o-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+	opacity: 0.8;
+	text-align: center;
+	line-height: 100px;
+	display: block;
+	height: 100px;
+}
+
+#brandList .picture:hover{
+	opacity: 1;
+}
+
+#brandList .picture img{
+	vertical-align: middle;
+	max-height: 90%;
+	max-width: 90%;
+}
+
+#brandList .name{
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	display: block;
+	color: #000000;
+	margin: 12px 0;
+}
+
+#brandList .last{
+	background: #f3f3f3;
+}
+/* End */
+
+
+/* Start:/bitrix/templates/dresscode/components/dresscode/slider/middle/style.css?15601388952031*/
+#middleSlider{
+	position: relative;
+	margin-top: 24px;
+}
+
+#middleSlider .wrap{
+	position: relative;
+	overflow: hidden;
+}
+
+#middleSlider ul{
+	position:relative;
+}
+
+#middleSlider ul li{
+	float:left;
+	display: block;
+}
+
+#middleSlider ul li img{
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#middleSlider ul li:hover img{
+	transform: scale(1.03);
+}
+
+#middleSlider ol{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;	
+	position: absolute;
+	left: 50%;
+	bottom:12px;
+}
+
+#middleSlider ol{
+	position: absolute;
+	left: 50%;
+	bottom: 12px;
+}
+
+#middleSlider ol li{
+	background: url(slideButton-2.png)/*tpa=http://xn----7sbbcbgnfafdzg2dehmbb2bi1d.xn--p1ai/bitrix/templates/dresscode/components/dresscode/slider/middle/images/slideButton.png*/ 0 0 no-repeat transparent;
+	margin-right: 4px;
+	width: 18px;
+	height: 18px;
+	float:left;
+	cursor: pointer;
+}
+
+#middleSlider ol li:hover{
+	background: url(slideButton-2.png)/*tpa=http://xn----7sbbcbgnfafdzg2dehmbb2bi1d.xn--p1ai/bitrix/templates/dresscode/components/dresscode/slider/middle/images/slideButton.png*/ -18px 0  no-repeat transparent;
+}
+
+#middleSlider ol li:active{
+	background: url(slideButton-2.png)/*tpa=http://xn----7sbbcbgnfafdzg2dehmbb2bi1d.xn--p1ai/bitrix/templates/dresscode/components/dresscode/slider/middle/images/slideButton.png*/ -36px 0  no-repeat transparent;
+}
+
+#middleSlider ol li.selected{
+	background: url(slideButton-2.png)/*tpa=http://xn----7sbbcbgnfafdzg2dehmbb2bi1d.xn--p1ai/bitrix/templates/dresscode/components/dresscode/slider/middle/images/slideButton.png*/ -54px 0  no-repeat transparent;	
+}
+
+#middleSlider ol li.selected:hover{
+	background: url(slideButton-2.png)/*tpa=http://xn----7sbbcbgnfafdzg2dehmbb2bi1d.xn--p1ai/bitrix/templates/dresscode/components/dresscode/slider/middle/images/slideButton.png*/ -72px 0  no-repeat transparent;	
+}
+
+#middleSlider ol li.selected:active{
+	background: url(slideButton-2.png)/*tpa=http://xn----7sbbcbgnfafdzg2dehmbb2bi1d.xn--p1ai/bitrix/templates/dresscode/components/dresscode/slider/middle/images/slideButton.png*/ -90px 0  no-repeat transparent;	
+}
+
+#middleSlider .middleSliderBtnLeft, 
+#middleSlider .middleSliderBtnRight{
+	background: url(slideArrow-2.png)/*tpa=http://xn----7sbbcbgnfafdzg2dehmbb2bi1d.xn--p1ai/bitrix/templates/dresscode/components/dresscode/slider/middle/images/slideArrow.png*/ no-repeat transparent;
+	position: absolute;
+	margin-top: -30px;
+	display: block;
+	height: 60px;
+	width: 30px;
+	top: 50%;
+
+}
+
+#middleSlider .middleSliderBtnLeft{
+	background-position: 0 0;
+	left: 0px;
+}
+
+#middleSlider .middleSliderBtnLeft:hover{
+	background-position: -30px 0;	
+}
+
+#middleSlider .middleSliderBtnLeft:active{
+	background-position: -60px 0;		
+}
+
+#middleSlider .middleSliderBtnRight{
+	background-position: 0 -60px;
+	right: 0px;
+}
+
+#middleSlider .middleSliderBtnRight:hover{
+	background-position: -30px -60px;
+}
+
+#middleSlider .middleSliderBtnRight:active{
+	background-position: -60px -60px;
+}
+/* End */
+/* /bitrix/templates/dresscode/components/bitrix/news/brands/style.css?15591952101931 */
+/* /bitrix/templates/dresscode/components/bitrix/menu/personal/style.css?15601388771686 */
+/* /bitrix/templates/dresscode/components/bitrix/system.pagenavigation/round/style.css?15591952112357 */
+/* /bitrix/templates/dresscode/components/bitrix/news/brands/bitrix/news.list/.default/style.css?15601389301656 */
+/* /bitrix/templates/dresscode/components/dresscode/slider/middle/style.css?15601388952031 */

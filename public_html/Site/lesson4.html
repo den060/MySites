@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DataBase</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<header>
+<div class="container">
+	<div class="ShaP"><a href="index.html">
+		<div class="Glav">ГЛАВНАЯ</div>
+		</a>
+		Создание БД (Базы данных)
+		
+	</div>
+	<div class="body">
+	<div class="box">
+		<div class="ops"><a href="lesson1.html">Урок 1</div></a>
+		<div class="ops"><a href="lesson2.html">Урок 2</div></a>
+		<div class="ops"><a href="lesson3.html">Урок 3</div></a>
+	</div>
+	<div id="DEL" class="ops" ><a href="lesson4.html">Как удалить эту БД</div></a>
+</div><hr>
+
+<h3><a href="index.html"> Главная </a> → Как удалить эту БД</h3>
+<div class="Opis">
+	<b><h3>Как удалить БД</h3></b>
+	Заходим в интерфейс phpMyAdmin, слева выделяем «провинившуюся» базу. Затем в основном меню сверху переходим через пункт «Операции» и справа выбираем «Удалить базу данных (DROP)».<br>
+	<img src="images/Lesson4/1.png">
+	Иногда нужно произвести неполное удаление данных MySQL (конкретную таблицу базы). Данная программа предоставляет для этого встроенный функционал.
+	<br><br>
+	В списке слева снова выбираем нужную БД. Затем в списке, который отображается во вкладке «Структура» выделите таблицу и нажмите слева ссылку «Удалить». Если требуется просто стереть из таблицы все строки, но не удалять ее, то для этого воспользуйтесь ссылкой «Очистить».<br>
+	<img src="images/Lesson4/2.png">
+	Чтобы удалить определенные записи таблицы, перейдите справа по ссылке. После этого по вкладке «Обзор» (верхнее меню), выделите в таблице нужные строки и нажмите на «Удалить».<br>
+	<img src="images/Lesson4/3.png">
+	MySQL Administrator также умеет «избавляться» от ненужных данных. Чтобы удалить БД MySQL, зайдите в программу под учетной записью администратора СУБД или пользователя, наделенного привилегией на выполнение команды DROP. В меню слева нажмите пункт «Schema». Визу выделите нужную базу, кликните правой клавишей и выберите команду «Drop Schema».<br>
+	<img src="images/Lesson4/4.png">
+	Так же можно удалить БД через запрос<br>
+	DROP {DATABASE | SCHEMA} [IF EXISTS] db-name <br><br>
+	<b>Теперь ВЫ знаете как избавиться от этой *непонятной БД</b><br><br>
+</div>
+<div class="perehod">
+	<a href="lesson1.html"><<</a>
+	<a href="lesson3.html"><</a>
+	<a href="lesson1.html">1</a>
+	<a href="lesson2.html">2</a>
+	<a href="lesson3.html">3</a>
+	<a href="lesson4.html" id="SS">4</a>
+	<br>
+</div>
+<div class="footer">
+	<div class="pod1">Сайт создал <a href="https://vk.com/den060" target="_blank">Исаев Денис</a><br> ИТ-10020 
+	<a href="http://www.kgsu.ru/" target="_blank">КГУ</a> 2020</div>
+	<div class="pod2"><a href="TZ.html">ТЗ</a></div></div>
+</div>
+</header>
+
+</body>
+</html>
